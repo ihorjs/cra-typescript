@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint --quiet './src/**/*.{ts,tsx}'",
+    "cypress:run": "npx cypress run --config video=false"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +38,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "^2.1.2",
+    "cypress": "^3.6.1",
+    "webpack": "^4.41.2"
   }
 }
